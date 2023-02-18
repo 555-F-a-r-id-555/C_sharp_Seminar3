@@ -16,7 +16,7 @@ string newNum(int num)
 {
     string num1 = $"{num}";
     int size = num1.Length;
-    string newNum = "";
+    string newNum = String.Empty; // исправил "" на String.Empty
     for (int i = size - 1; i >= 0; i--) newNum += num1[i];
     return (num1 == newNum) ? "ДА" : "НЕТ";
 }
