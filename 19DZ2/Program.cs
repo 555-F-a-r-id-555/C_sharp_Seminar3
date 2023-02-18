@@ -5,7 +5,7 @@
 // 23432 -> да
 
 
-string polindrom(int number1)
+string palindrom(int number1)
 {
     if (1 <= (number1 / 10000) && (number1 / 10000) < 10)
     {
@@ -19,14 +19,14 @@ string polindrom(int number1)
     return $"Длина числа не равна 5";
 }
 
-void printPolindrom(int number1) =>
-Console.WriteLine($"{number1} -> {polindrom(number1)}");
+void printPalindrom(int number1) =>
+Console.WriteLine($"{number1} -> {palindrom(number1)}");
 
 
-printPolindrom(14212);
-printPolindrom(12821);
-printPolindrom(23432);
+printPalindrom(14212);
+printPalindrom(12821);
+printPalindrom(23432);
 //----------------
-printPolindrom(121);
-printPolindrom(123);
-printPolindrom(1234554321);
+printPalindrom(121);
+printPalindrom(123);
+printPalindrom(1234554321);

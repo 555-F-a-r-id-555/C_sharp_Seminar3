@@ -30,7 +30,7 @@ string newNum(int num)
 
 // Вариант 2 - при длине числа равном 5;
 
-void polindrom(int number1)
+void palindrom(int number1)
 {
     if (1 <= (number1 / 10000) && (number1 / 10000) < 10)
     {
@@ -47,19 +47,19 @@ void polindrom(int number1)
     else printRes(number1); // если число больше или меньше 5, смотреть выше ;
 }
 
-polindrom(14212);
-polindrom(12821);
-polindrom(23432);
+palindrom(14212);
+palindrom(12821);
+palindrom(23432);
 //----------------
-polindrom(121);
-polindrom(123);
-polindrom(1234554321);
+palindrom(121);
+palindrom(123);
+palindrom(1234554321);
 
 
 // Вариант 3 - Самый простой, похож на 2 вариант;
 
 
-string polindrom2(int number1)
+string palindrom2(int number1)
 {
     if (1 <= (number1 / 10000) && (number1 / 10000) < 10)
     {
@@ -73,16 +73,14 @@ string polindrom2(int number1)
     return $"Длина числа не равна 5";
 }
 
-void printPolindrom2(int number1) =>
-Console.WriteLine($"{number1} -> {polindrom2(number1)}");
+void printPalindrom2(int number1) =>
+Console.WriteLine($"{number1} -> {palindrom2(number1)}");
 
 
-printPolindrom2(14212);
-printPolindrom2(12821);
-printPolindrom2(23432);
+printPalindrom2(14212);
+printPalindrom2(12821);
+printPalindrom2(23432);
 //----------------
-printPolindrom2(121);
-printPolindrom2(123);
-printPolindrom2(1234554321);
-
-
+printPalindrom2(121);
+printPalindrom2(123);
+printPalindrom2(1234554321);
