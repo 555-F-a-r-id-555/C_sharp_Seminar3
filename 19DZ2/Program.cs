@@ -7,7 +7,7 @@
 
 string palindrom(int number1)
 {
-    if (1 <= (number1 / 10000) && (number1 / 10000) < 10)
+    if (number1 >= 10000 && number1 < 100000)
     {
         int newNumber1 = 0;
         for (int i = 0; i < 5; i++)
