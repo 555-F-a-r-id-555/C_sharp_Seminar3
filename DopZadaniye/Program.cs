@@ -2,14 +2,24 @@
 // Написать метод для разворота массива, 
 // не используя память под дополнительный массив
 
-int[] num = { 1, 2, 3, 4, 5 };
-// Console.WriteLine($"{num.Length}");
 void revers(int[] num)
 {
-    for (int i = num.Length - 1; i >= 0; i--)
+    int j = 0;
+    int temp;
+    for (int i = num.Length - 1; i > (num.Length - 1) / 2; i--)
     {
-        Console.Write($"{num[i]} ");
+        temp = num[j];
+        num[j] = num[i];
+        num[i] = temp;
+        //Console.Write($"{num[j]} ");
+        j++;
     }
+    foreach (int value in num) Console.Write($"{value} ");
+    Console.WriteLine();
 }
 
-revers(num);
+revers(new int[] { 1 });
+revers(new int[] { 1, 2 });
+revers(new int[] { 1, 2, 3 });
+revers(new int[] { 1, 2, 3, 4 });
+revers(new int[] { 1, 2, 3, 4, 5 });
